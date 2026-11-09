@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Kiddo";
-    src: url("../Text%20font/kiddo/kiddo-regular.otf") format("opentype");
+    src: url("https://1jenl11.github.io/jennys-room-portrait/Text%20font/kiddo/kiddo-regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "openboek";
-    src: url("../Text%20font2/openboek/openboek-notregular.otf") format("opentype");
+    src: url("https://1jenl11.github.io/jennys-room-portrait/Text%20font2/openboek/openboek-notregular.otf") format("opentype");
 }
 
 * {
