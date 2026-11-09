@@ -181,7 +181,7 @@ vanity-gallery {
 }
 /* Main font */
 .vanity-page {
-    font-family: 'kiddo', sans-serif;
+    font-family: 'Kiddo', sans-serif;
     font-size: 15px;
     margin-left: 5%;
 }
@@ -209,7 +209,7 @@ vanity-gallery {
 .mirror-page h1,
 .underbed-page h1,
 .key-page h1 {
-    font-family: 'Openboek', serif;
+    font-family: 'openboek', serif;
     font-weight: normal;
 }
 
