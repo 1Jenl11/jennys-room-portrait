@@ -1,0 +1,348 @@
+@font-face {
+    font-family: "Kiddo";
+    src: url("Text font/kiddo/kiddo-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "openboek";
+    src: url("Text font2/openboek/openboek-notregular.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8dfd2;
+}
+
+.room-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.room-link {
+    position: absolute;
+    display: block;
+    z-index: 20;
+    cursor: pointer;
+    background-color: transparent;
+    border:none;
+}
+
+.room-link:hover {
+    background: rgba(255, 245, 210, 0.12);
+}
+
+/* Interactive areas */
+
+.vanity-link {
+    top: 32%;
+    left: 6%;
+    width: 30%;
+    height: 23%;
+}
+
+.mirror-link {
+    top: 0%;
+    left: 0%;
+    width: 23%;
+    height: 30%;
+}
+
+.underthebed-link {
+    top: 42%;
+    left: 48%;
+    width: 25%;
+    height: 25%;
+}
+
+.key-link {
+    top: 2%;
+    left: 66%;
+    width: 14%;
+    height: 17%;
+}
+
+.room-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.room-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-2deg);
+    z-index: 1;
+    font-family: "Kiddo";
+    font-size: 100px;
+    font-weight: normal;
+    color: #75513d;
+    -webkit-text-stroke: 2px #fff4e5;
+    paint-order: stroke fill;
+    text-shadow: 3px 4px 0px #c99b98;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    white-space: nowrap;
+    text-shadow:
+        0 0 10px rgba(255, 239, 190, 0.8),
+        0 0 25px rgba(255, 225, 150, 0.6),
+        0 0 45px rgba(255, 225, 150, 0.35);
+    isolation: isolate;
+}
+
+.room-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 115%;
+    height: 150%;
+    background: rgba(255, 239, 190, 0.45);
+    filter: blur(35px);
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.room-title span {
+    display: block;
+    font-size: 65px;
+    margin-top: -5px;
+}
+
+.room-title small {
+    display: block;
+    margin-top: 10px;
+    font-family: "Kiddo";
+    font-size: 25px;
+    font-weight: normal;
+    color: #75513d;
+    transform: rotate(1deg);
+}
+
+/* Vanity Page */
+vanity-gallery {
+    position: relative;
+    width: 850px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.vanity-main-photo {
+    display: block;
+    width: 45%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 30px; 
+    border: 3px solid #e8e3d9;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.4),
+    0px 0px 48px rgba(255, 250, 248, 0.25);
+
+}
+
+.vanity-page {
+    background-color: #2b1b1e;
+    color: #F1e8d9;
+    line-height: 2.2;
+}
+
+.go-back {
+    color: #e8c987;
+    text-decoration: none;
+    border-bottom: 1px solid #e8c987;
+    padding-bottom: 3px;
+}
+
+.go-back:hover {
+    color: #fff0c9;
+    opacity: 1;
+}
+/* Main font */
+.vanity-page {
+    font-family: 'kiddo', sans-serif;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+/* title */
+.vanity-page .vanity-header h1 {
+    font-family: 'openboek';
+    font-size: 40px;
+}
+
+
+/* Other three pages */
+
+.mirror-page,
+.underbed-page,
+.key-page {
+    font-family: 'Kiddo', sans-serif;
+    line-height: 2.2;
+    margin-top: 40px;
+    font-size: 1rem;
+    margin-left: 3%;
+}
+
+/* Titles */
+.mirror-page h1,
+.underbed-page h1,
+.key-page h1 {
+    font-family: 'Openboek', serif;
+    font-weight: normal;
+}
+
+
+/* Mirror page */
+.mirror-page {
+    background-color: #2c3a47;
+    color: #f0efea;
+    line-height: 2.2;
+    margin-left: 6%;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.mirror-page .go-back {
+    color: #E8D0B9;
+    border-color: #E8D0B9;
+}
+ mirror-gallery {
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.mirror-main-photo {
+    display: block;
+    width: 30%;
+    position: absolute;
+    top: 200px;
+    right: 12%;
+    z-index: 1;
+    max-width: 100%;
+    margin: 45px auto 0;
+    border: 2px solid #ffffff
+}
+
+.mirror-small-photo {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    right: 40%;
+    z-index: 2;
+    top: 190px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2)
+}
+
+
+/* UNDER THE BED */
+.underbed-page {
+    background-color: #51464D;
+    color: #F1E8E9;
+    line-height: 2.2;
+    margin-left: 5%
+}
+
+.underbed-page .go-back {
+    color: #D7C1CF;
+    border-color: #D7C1CF;
+}
+
+.underbed-gallery {
+    position: relative;
+    width: 850px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.underbed-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding: 0 5%;
+    gap: 40px;
+}
+
+.underbed-main-photo {
+    display: block;
+    width: 55%;
+    height: auto;
+    max-width: 100%;
+    margin: 85px auto 0;
+    left: 20%;
+    border: 3px solid #2a2133;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.6),
+    0px 0px 60px rgba(74,48,87,0.6);
+}
+
+.underbed-small-photo {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    right: 5%;
+    top: 195px;
+    border: 2px solid #2a2133;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.6),
+    0px 0px 40px rgba(74,48,87,0.5);
+}
+/* Key Page */
+.key-page {
+    background-color: #4a3424;
+    color: #FFF1D8;
+}
+
+.key-page .go-back {
+    color: #EADCC0;
+    border-color: #EADCC0;
+}
+
+.key-description{
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-top: 30px;
+    margin-bottom: 50 px;
+}
+    
+    key-gallery {
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.key-main-photo {
+    display: block;
+    width: 35%;
+    height: auto;
+    max-width: 100%;
+    margin: 45px auto 0;
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.35)
+}
+
+.key-detail-photo {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    right: 19%;
+    top: 220px;
+    box-shadow: 0 0 30px rgba(255,215,0,0.45)
+}
+
+
