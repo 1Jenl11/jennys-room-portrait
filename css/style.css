@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Kiddo";
-    src: url("Text font/kiddo/kiddo-regular.otf") format("opentype");
+    src: url("../Text font/kiddo/kiddo-regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "openboek";
-    src: url("Text font2/openboek/openboek-notregular.otf") format("opentype");
+    src: url("../Text font2/openboek/openboek-notregular.otf") format("opentype");
 }
 
 * {
